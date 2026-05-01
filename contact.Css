@@ -1,0 +1,31 @@
+/* Custom Global Colors */
+:root {
+  --frandee-blue: #0e2e4e;
+  --frandee-accent: #00a8e8;
+}
+
+/* Form Styles */
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid var(--frandee-accent);
+}
+
+.btn-info {
+    background-color: var(--frandee-accent);
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-info:hover {
+    background-color: var(--frandee-blue);
+}
+
+/* Map Shadow Effect */
+iframe {
+    filter: grayscale(10%);
+    transition: 0.5s;
+}
+
+iframe:hover {
+    filter: grayscale(0%);
+}
