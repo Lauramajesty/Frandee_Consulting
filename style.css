@@ -11,7 +11,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--frandee-dark);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* --- Navigation & Buttons --- */
@@ -27,18 +27,42 @@ body {
 .hero-section {
   position: relative;
   /* Ensure hero-bg.jpg is inside your photos/ folder */
-  background: linear-gradient(rgba(14, 46, 78, 0.7), rgba(14, 46, 78, 0.7)), 
-              url('photos/hero-bg.jpg') center/cover no-repeat;
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
+  background: linear-gradient(rgba(14, 46, 78, 0.85), rgba(14, 46, 78, 0.85)), 
+              url('photos/hero-bg.jpg') center/cover no-repeat fixed;
+  padding: 100px 0;
   color: white;
 }
 
 .hero-content h1 {
   font-size: 3.5rem;
   font-weight: 800;
-  letter-spacing: -1px;
+  text-transform: capitalize;
+}
+.service-card {
+  background: #ffffff;
+  border: 1px solid #eef2f6;
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(14, 46, 78, 0.1);
+  border-bottom: 4px solid var(--frandee-accent);
+}
+
+.icon-box i {
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .icon-box i {
+  transform: scale(1.1);
+}
+
+.tracking-wider {
+  letter-spacing: 2px;
 }
 
 /* --- Standardized Buttons --- */
