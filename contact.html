@@ -91,19 +91,19 @@
                     <h3 class="fw-bold mb-4">Request a Consultation</h3>
                     
                     <form action="https://formsubmit.co/frandeeconsultingservices@gmail.com" method="POST">
+                        <input type="hidden" name="_next" value="https://your-website-link.com/index.html">
                         
                         <input type="text" name="_honey" style="display:none">
-                        <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
 
                         <div class="mb-3">
-                            <label class="form-label fw-bold small">Name</label>
-                            <input type="text" name="name" class="form-control bg-light border-0 py-3" placeholder="Full Name" required>
+                            <label class="form-label">Full Name</label>
+                            <input type="text" name="name" class="form-control" required>
                         </div>
+                        
                         <div class="mb-3">
-                            <label class="form-label fw-bold small">Email</label>
-                            <input type="email" name="email" class="form-control bg-light border-0 py-3" placeholder="Email Address" required>
+                            <label class="form-label">Email Address</label>
+                            <input type="email" name="email" class="form-control" required>
                         </div>
-                        <div class="mb-3">
                             <label class="form-label fw-bold small">Type of Service Needed</label>
                             <select class="form-select bg-light border-0 py-3" name="service_type" required>
                               <option selected disabled value="">Please select a service...</option>
@@ -113,16 +113,19 @@
                               <option value="Well Evaluation">Well Evaluation</option>
                               <option value="Soil Corrosiveness">Soil Corrosiveness</option>
                               <option value="Refraction Seismic">Refraction Seismic</option>
+                              <option value= "Basin Evaluation">Basin Evaluation</option>
+                              <option value="Reservoir Evaluation">Reservoir Evaluation</option>
                               <option value="Other">Other Geoscience Services</option>
                             </select>
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label fw-bold small">Project Description / Message</label>
-                            <textarea class="form-control bg-light border-0 py-3" name="message" rows="5" placeholder="Tell us more about your project needs..." required></textarea>
+                            <textarea name="message" class="form-control" rows="4" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-info text-white w-100 py-3 fw-bold">Let's Get Started</button>
-                    </form>
+
+                        <button type="submit" class="btn btn-info w-100">Send Request</button>
+                  </form>
                 </div>
             </div>
         </div>
