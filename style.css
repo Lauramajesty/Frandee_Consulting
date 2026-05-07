@@ -43,6 +43,15 @@ body {
   align-items: center;
   color: white;
 }
+/* Reusable Button Style */
+.btn-frandee {
+  background-color: var(--frandee-accent);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
 
 .hero-content h1 {
   font-size: 4rem;
@@ -75,4 +84,8 @@ body {
 #backToTopBtn:hover {
   background-color: var(--frandee-blue);
   transform: translateY(-2px);
+}
+
+.btn-frandee:hover {
+  background-color: var(--frandee-blue);
 }
